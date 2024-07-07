@@ -1,0 +1,222 @@
+.filter-container {
+    width: 230px;
+    display: block;
+    border: 1px solid rgba(228, 231, 238, 1);
+    background-color: white;
+    position: absolute;
+    margin-top: 468px;
+}
+
+.range-containerr {
+    width: 230px;
+    border: 1px;
+    border: 1px solid rgba(228, 231, 238, 1);
+    background-color: white;
+}
+.---{
+    align-items: center;
+    margin-top: 5px;
+}
+
+.price-filter {
+    width: 206px;
+}
+
+.slider-container {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.slider::-webkit-slider-thumb {
+    pointer-events: auto;
+}
+.price-wrapper{
+    display: flex;
+    padding: 10px;
+
+    .price-box{
+        display: flex;
+
+        .price-text{
+            border: 1px solid #E4E7EE;
+            width: 91px;
+            height: 29px;
+            gap: 10px;
+            border-radius: 3px;
+            background-color: white;
+        }
+    }
+}
+
+
+.narx {
+    margin: 10px 50px 18px 10px;
+    color: rgba(30, 30, 30, 1);
+
+font-family: Rubik;
+font-size: 18px;
+font-weight: 500;
+line-height: 21.33px;
+text-align: left;
+
+}
+
+.value-display {
+    margin-bottom: 10px;
+}
+
+.brand-title {
+    margin-left: 10px;
+}
+
+input {
+    margin-top: 5px;
+    margin-left: 9px;
+}
+
+.brend__boyicha {
+    align-items: center;
+    padding: 10px;
+    max-height: 330px;
+    border-top: #E4E7EE 3px solid;
+    border-bottom: #E4E7EE 3px solid;
+    
+}
+
+.srchh {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    width: 210px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(228, 231, 238, 1)
+}
+
+.btn__search {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    .search__img {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+.check__lab {
+    margin-left: 10px;
+    width: 117px;
+    align-items: center;
+}
+
+.lable__input {
+    padding: 10px;
+    display: block;
+    align-items: center;
+}
+
+.checkbox__inp {
+    align-items: center;
+}
+
+.checkbox-list {
+    align-items: center;
+
+    .checkbox-item {
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+
+        p {
+            font-family: Rubik;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.59px;
+            text-align: left;
+            color: rgba(160, 160, 160, 1);
+        }
+    }
+}
+
+.on-off {
+    margin-top: 30px;
+    border-top:  1px solid rgba(228, 231, 238, 1);
+    padding: 10px;
+
+    .switch {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        width: 100%;
+
+        input {
+            display: none;
+        }
+
+        .slider {
+            position: relative;
+            cursor: pointer;
+            width: 40px;
+            height: 20px;
+            background-color: #ccc;
+            transition: background-color 0.4s;
+
+            &.round {
+                border-radius: 20px;
+
+                &:before {
+                    border-radius: 50%;
+                }
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 18px;
+                width: 18px;
+                left: 1px;
+                bottom: 1px;
+                background-color: white;
+                transition: transform 0.4s;
+            }
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(20px);
+        }
+
+        .switch-text {
+            margin: 0;
+            margin-right: 10px;
+            font-family: Rubik;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.59px;
+            text-align: left;
+        }
+    }
+}
+

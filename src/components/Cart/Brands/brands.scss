@@ -1,0 +1,36 @@
+
+.container {
+    width: 1230px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-right: 260px;
+}
+
+.brands-inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.brands-wrapper {
+    margin-top: 21px;
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    width: 188px;
+    height: 100px;
+    gap: 20px;
+    text-align: center;
+    .brand-img {
+        width: 90px;
+        height: 90px;
+    }
+}
